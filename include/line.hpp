@@ -18,6 +18,8 @@ public:
   
   Line(int startIndex,int endIndex,double theta,double yIntercept,const std::vector<float>& ranges);
 
+  
+  
   void merge(Line line);
 };
 #endif

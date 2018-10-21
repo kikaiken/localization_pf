@@ -134,7 +134,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/localization_pf_node.cpp)
 
-add_executable(localization_pf src/localization_pf.cpp src/particle.cpp src/particleFilter.cpp src/line.cpp src/hokuyo_functions.cpp)
+add_executable(localization_pf src/localization_pf.cpp src/particle.cpp src/particleFilter.cpp src/line.cpp src/hokuyo_functions.cpp src/map.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the

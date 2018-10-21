@@ -44,7 +44,6 @@ void ParticleFilter::resample(){
 }
 
 
-
 void ParticleFilter::randomPos(double* x,double* y,double* rad){
   static std::mt19937 mt = std::mt19937(rnd());
   static std::uniform_real_distribution<double> randX(0, 99);

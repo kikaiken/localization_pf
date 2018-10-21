@@ -31,18 +31,22 @@ public:
   void predictPos(const std::list<Line>& lines,Particle& resultParticle);
   
 private:
+  /*はじめにparticleをばらまく*/
   void initialize(const std::list<Line>& lines);
-  /*
-  double likelihood(Particle particle);
-  */
+
+  /*particleを更新する*/
   void resample();
-  
+
+  /*ランダムなparticleを作成*/
   void randomPos(double* x, double* y,double* rad);
 
+  /*particlesを動かす*/
   void predict();
 
+  /*重みつき平均で位置を返す*/
   void measure(Particle& resultParticle);
 
+  /*直線郡をもとに重みを計算*/
   void weight(const std::list<Line>& lines);
 };
 
